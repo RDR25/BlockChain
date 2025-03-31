@@ -1,0 +1,94 @@
+/* Main container for the homepage */
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styling for each login section */
+  .login-section {
+    border: solid #ddd thin;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Center alignment for the headings */
+  .login-section h2 {
+    text-align: center;
+    color: #004aad; /* Primary color */
+  }
+  
+  /* Form label styling */
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Input field styling */
+  .login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: solid #ccc thin;
+  }
+  
+  /* Button styling for login */
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004aad; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-form button:hover {
+    background-color: #003080; /* Darker shade for hover effect */
+  }
+  
+  /* Link styling for "Don't have an account? Register" */
+  .login-section p {
+    text-align: center;
+  }
+  
+  .login-section a {
+    color: #004aad; /* Primary color */
+  }
+  
+  .login-section a:hover {
+    text-decoration: underline;
+  }
+  
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center; /* Center align sections */
+      gap: 20px; /* Add spacing between sections */
+      padding: 10px;
+      margin-top: 20px; /* Adjust margin for better spacing */
+    }
+  
+    .login-section {
+      width: 90%; /* Make login sections take up more space on small screens */
+      box-shadow: none; /* Remove shadow for a cleaner look */
+    }
+  
+    .login-form input {
+      width: calc(100% - 10px); /* Adjust input width for smaller screens */
+    }
+  
+    .login-form button {
+      font-size: 14px; /* Slightly smaller font size for buttons */
+      padding: 8px; /* Adjust padding for smaller screens */
+    }
+  }
+  
